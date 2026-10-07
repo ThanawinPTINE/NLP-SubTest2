@@ -4,8 +4,8 @@ Web application แชตบอตที่ตอบคำถามเกี่�
 
 > ⚠️ ข้อมูลในโฟลเดอร์ `data/` เป็น **ข้อมูลจำลอง** ที่สร้างขึ้นเพื่องานเรียนวิชา NLP ไม่ใช่ข้อมูลหรือประกาศอย่างเป็นทางการของมหาวิทยาลัย
 
-- **Streamlit App:** _(ใส่ URL หลัง deploy)_
-- **GitHub Repository:** _(ใส่ URL ของ repo)_
+- **Streamlit App:** https://kmutnb-prachinburi-dorm-chatbot.streamlit.app
+- **GitHub Repository:** https://github.com/ThanawinPTINE/NLP-SubTest2
 
 ## แนวคิดของ Domain
 
