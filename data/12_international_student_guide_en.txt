@@ -1,0 +1,49 @@
+# International Student Guide to KMUTNB Prachinburi Dormitory
+
+Note: This guide is simulated data created for an NLP course assignment. It is not an official university announcement.
+
+## About the Dormitory
+- The dormitory is located inside the Prachinburi campus. It takes about 10 minutes to walk to the main lecture building.
+- There are four buildings: Buildings A and B are for female students, and Buildings C and D are for male students. Each building has 4 floors.
+- Room types: fan room for 2 people, air-conditioned room for 2 people, and single air-conditioned room. Every room has a private bathroom with a cold-water shower and a balcony for drying clothes.
+- 20 rooms are reserved each semester for exchange and international students.
+
+## Rent and Fees
+- Fan room for 2 people: 2,500 THB per person per semester.
+- Air-conditioned room for 2 people: 4,500 THB per person per semester.
+- Single air-conditioned room: 7,000 THB per semester.
+- Security deposit: 1,000 THB, paid once on move-in and refunded within 30 days after the move-out inspection.
+- Electricity costs 6 THB per unit and water costs 18 THB per unit. Bills are sent to your university email on the 1st of each month and must be paid by the 7th.
+- Payment can be made by scanning the QR code on the invoice or in cash at the dormitory office. Credit cards are not accepted.
+
+## Documents for Move-in
+- A copy of your passport and the visa page, a copy of your student ID card, and two 1-inch photos.
+- Please tell the dormitory office about any medical conditions or drug allergies on move-in day.
+
+## Gate Hours and House Rules
+- The dormitory gate opens at 05:00.
+- From Sunday to Thursday the gate closes at 22:30. On Friday, Saturday, and nights before public holidays it closes at 23:30.
+- If you need to return after closing time, submit the online late-return form before 18:00 on the same day. You may do this up to 2 times per week.
+- Quiet hours are 22:00 to 06:00 (from 21:00 during exam weeks).
+- Smoking, e-cigarettes, alcohol, pets, and cooking in your room are not allowed. Please use the shared kitchen on the 1st floor of Building B (07:00-21:00).
+- Visitors may meet you only in the lounge on the 1st floor of each building between 09:00 and 20:00. Visitors may not stay overnight.
+
+## Repairs
+- To report a repair, scan the QR code on the notice board on the 1st floor of your building, or visit the dormitory office on the 1st floor of Building A (Monday to Friday, 08:30-16:30).
+- Air-conditioner problems are usually fixed within 3-5 working days. General repairs such as light bulbs or leaking taps take up to 2 working days.
+- Emergencies such as flooding, electrical sparks, or a door that cannot lock are handled within 4 hours, 24 hours a day. Outside office hours, report emergencies to the security guard at the front gate.
+
+## Internet
+- Connect to the Wi-Fi network "KMUTNB-Dorm" using your university (ICIT) account. It is free of charge.
+- You can connect up to 3 devices at the same time, with a maximum speed of 50 Mbps per user.
+- Personal routers and BitTorrent are not allowed.
+
+## Laundry
+- Coin-operated washing machines are on the 1st floor of every building, open daily from 06:00 to 22:00.
+- Washing costs 10 THB per load and drying costs 20 THB per load. The machines accept only 10 THB coins, which you can exchange at the security booth.
+
+## Emergency Numbers
+- Dormitory security (24 hours): 037-000-100 (simulated number)
+- Dormitory office: 037-000-123 (simulated number)
+- Police: 191, Fire: 199, Ambulance: 1669
+- In case of fire, use the emergency stairs and go to the assembly point at the car park in front of Building A.

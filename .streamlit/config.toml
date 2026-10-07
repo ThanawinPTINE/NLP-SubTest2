@@ -1,0 +1,7 @@
+[theme]
+primaryColor = "#C2410C"
+
+[server]
+# ปิดการเฝ้าไฟล์ เพื่อไม่ให้ Streamlit ไล่สแกนโมดูลของ transformers จน log เต็มไปด้วย error
+# (ผลข้างเคียง: แก้โค้ดแล้วต้องรีสตาร์ตแอปเองเมื่อรันในเครื่อง)
+fileWatcherType = "none"

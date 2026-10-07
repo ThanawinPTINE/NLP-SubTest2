@@ -1,0 +1,20 @@
+# API keys / secrets (ห้ามอัปโหลดขึ้น GitHub)
+.streamlit/secrets.toml
+.env
+
+# Python, Git และ GitHub CLI แบบพกพาที่ใช้ในเครื่องแล็บ
+.python/
+.tools/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ไฟล์ของ Claude Code และ notebook
+.claude/
+.ipynb_checkpoints/
+
+# ไฟล์ว่างจากโจทย์ (ใช้ README.md แทน)
+README.txt
