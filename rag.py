@@ -226,4 +226,5 @@ def stream_answer(client, model: str, question: str, results: list[tuple[Chunk, 
     for part in stream:
         delta = part.choices[0].delta.content if part.choices else None
         if delta:
-            yield delta
+            # บางโมเดล (เช่น gpt-oss) อ้างอิงเป็น 【1】 แปลงเป็น [1] ทีละตัวอักษร เพราะวงเล็บกับตัวเลขอาจมาคนละ chunk
+            yield delta.replace("【", "[").replace("】", "]")

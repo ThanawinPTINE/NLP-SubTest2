@@ -57,11 +57,6 @@ def default_model() -> str | None:
         return None
 
 
-def normalize_citations(text: str) -> str:
-    """บางโมเดลอ้างอิงเป็น 【1】 ให้แปลงเป็น [1] ให้เหมือนกันทั้งหมด"""
-    return re.sub(r"【(\d+)】", r"[\1]", text)
-
-
 def render_sources(message: dict) -> None:
     """แสดงเอกสารอ้างอิงใต้คำตอบทุกครั้ง พร้อมทำเครื่องหมายเอกสารที่ LLM อ้างอิงจริง"""
     sources = message.get("sources", [])
@@ -164,7 +159,7 @@ if question:
 
         reply = {
             "role": "assistant",
-            "content": normalize_citations(answer),
+            "content": answer,
             "question": question,
             "query": query,
             "sources": [{"source": c.source, "header": c.header, "text": c.text, "score": s}

@@ -29,7 +29,7 @@ API key อ่านจาก `st.secrets["GROQ_API_KEY"]` (ไฟล์ `.strea
   - Embedding ใช้ `intfloat/multilingual-e5-small` ซึ่ง**ต้อง**มีคำนำหน้า `passage: ` / `query: ` เวกเตอร์ถูก normalize แล้วใช้ `IndexFlatIP` (เท่ากับ cosine)
   - ข้อความ "ไม่พบข้อมูล" (`NOT_FOUND`) ต้องคงไว้ตามโจทย์ การปฏิเสธการตอบมาจาก system prompt ไม่ได้ใช้ score threshold (คะแนนของ e5 กระจุกตัวอยู่ที่ประมาณ 0.8–0.9 แม้เป็นคำถามที่ไม่เกี่ยวข้อง)
 - `app.py`: UI สร้าง `VectorStore` ครั้งเดียวด้วย `@st.cache_resource` ทุกเทิร์นจะเขียนคำถามต่อเนื่องให้สมบูรณ์ (`condense_question`) แล้วค้นหา จากนั้น stream คำตอบ แต่ละ assistant message ใน `st.session_state.messages` เก็บ `sources` ไว้เพื่อแสดงอ้างอิงซ้ำตอน rerun ส่วนเลข `[n]` ในคำตอบใช้ระบุว่า LLM อ้างอิงเอกสารใดจริง
-- Groq ถอดโมเดลเก่าออกเป็นระยะ (เช่น `llama-3.3-70b-versatile` ใช้ไม่ได้แล้ว เมื่อเรียกจะได้ 404 `model_not_found`) แอปจึงดึงรายชื่อจาก `models.list()` แล้วเรียงตาม `PREFERRED_MODELS` ใน `app.py` ค่าเริ่มต้นคือ `openai/gpt-oss-120b` ซึ่งบางครั้งอ้างอิงเป็น `【n】` และ `normalize_citations` จะแปลงให้เป็น `[n]`
+- Groq ถอดโมเดลเก่าออกเป็นระยะ (เช่น `llama-3.3-70b-versatile` ใช้ไม่ได้แล้ว เมื่อเรียกจะได้ 404 `model_not_found`) แอปจึงดึงรายชื่อจาก `models.list()` แล้วเรียงตาม `PREFERRED_MODELS` ใน `app.py` ค่าเริ่มต้นคือ `openai/gpt-oss-120b` ซึ่งบางครั้งอ้างอิงเป็น `【n】` และ `stream_answer` จะแปลงวงเล็บให้เป็น `[n]` ตั้งแต่ตอน stream
 - `.streamlit/config.toml` ตั้ง `fileWatcherType = "none"` เพื่อปิด traceback เรื่อง torchvision ที่เกิดจาก watcher สแกน `transformers` (แก้โค้ดแล้วต้องรีสตาร์ตแอปเอง)
 
 ## ข้อกำหนดของงานที่ต้องรักษาไว้
