@@ -185,9 +185,12 @@ def build_messages(question: str, results: list[tuple[Chunk, float]],
     """ประกอบข้อความที่ส่งให้ LLM: system prompt + ประวัติแชตล่าสุด + เอกสารอ้างอิงและคำถาม"""
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
     messages += [{"role": m["role"], "content": m["content"]} for m in history]
+    # ระบุภาษาที่ต้องตอบให้ชัดเจน เพราะ system prompt เป็นภาษาไทย โมเดลจึงมักตอบคำถามภาษาอังกฤษเป็นภาษาไทย
+    is_thai = re.search(r"[฀-๿]", question) is not None
+    language = "(ตอบเป็นภาษาไทย)" if is_thai else "(Answer in English.)"
     messages.append({
         "role": "user",
-        "content": f"เอกสารอ้างอิง:\n{format_context(results)}\n\nคำถาม: {question}",
+        "content": f"เอกสารอ้างอิง:\n{format_context(results)}\n\nคำถาม: {question}\n{language}",
     })
     return messages
 
